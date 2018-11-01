@@ -1,12 +1,149 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-	<title>DELI-VERY</title>
-</head>
-<body>
-	<h1>
-		Hello world!
-	</h1>
-	<a href="/map">View map</a>
-</body>
+<html lang="en">
+    <head>
+        <title>Spaghetti Burgers | The taste of the world</title>
+        <meta charset="utf-8"/>
+				<link rel="stylesheet" href="css/style.css">
+				<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+				<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+				<script src="js/js_script.js"></script>
+				<script src="https://vuejs.org/js/vue.js"></script>
+    </head>
+    <body>
+
+			<main>
+				<div class="header">
+          <span>
+					<img  id="headerimage"src="img/header2.jpg">
+          <h1 id="title"> Welcome to Spaghetti Burgers </h1>
+        </span>
+				</div>
+			</main>
+
+			<section id="burgerselction">
+				<div class="margin">
+				<h3>Select your Burger </h3>
+				<div>
+					Select one of our delicious Burgers. <br />
+					All burgers contain <span class="glulac">gluten </span>and <span class="glulac">lactose</span>. But of course you can order them
+					<span class="glulac">gluten-free</span> and/or <span class="glulac">latose-free</span>. Just check the right box in the section 'Customer Information'.
+				</div>
+				<br>
+
+				<div class="wrapper">
+   			<div class="box a">The German <br><br>
+					<img src="img/german.jpg" alt="The German" title="The German" > <br><br>
+					<ul>
+						<li>Cheddar</li>
+						<li>Tomatos</li>
+						<li>Onions</li>
+						<li>Iceberg lettuce</li>
+						<li>Cucumber</li>
+						<li>Beef</li>
+					</ul>
+				</div>
+		   	<div class="box b">The Danish <br><br>
+					<img src="img/danish.jpg" alt="The Danish" title="The Danish" > <br><br>
+					<ul>
+						<li>Cheddar</li>
+						<li>Tomatos</li>
+						<li>Onions</li>
+						<li>Rucola</li>
+						<li>Cucumber</li>
+						<li>Halloumi</li>
+					</ul>
+				</div>
+   			<div class="box c">The Italian <br><br>
+					<img src="img/italian.jpg" alt="The Italian" title="The Italien" > <br><br>
+					<ul>
+						<li>Cheddar</li>
+						<li>Pepperoni</li>
+						<li>Onions</li>
+						<li>Iceberg lettuce</li>
+						<li>Cucumber</li>
+						<li>Beef</li>
+					</ul>
+				</div>
+   			<div class="box d">The American <br><br>
+					<img src="img/american.jpg" alt="The American" title="The American" > <br><br>
+					<ul>
+						<li>Cheddar</li>
+						<li>Tomatos</li>
+						<li>Onions</li>
+						<li>Iceberg lettuce</li>
+						<li>Bacon</li>
+						<li>Beef</li>
+					</ul>
+				</div>
+ 				</div>
+
+
+	</div>
+			</section>
+
+			<section id="customerinformation" class="margin">
+				<h3>Customer Information </h3>
+				<div>
+					To deliver you your burger as fast as possible we need some more informaion.
+				</div>
+
+			<form>
+
+				<p>
+					Do you have any allergies?<br>
+    			<input type="checkbox" id="glutenfree" name="allergic" required="required">
+					<label for="allergic">Gluten-free</label><br>
+					<input type="checkbox" id="lactosefree" name="allergic" required="required">
+					<label for="allergic">Lactose-free</label><br>
+				</p>
+
+				<p>
+					Your Gender: <br>
+					<input type="radio" id="male" name="gender" required="required" checked="checked">
+					<label for="male">Male</label> &emsp;
+					<input type="radio" id="female" name="gender" required="required">
+					<label for="female">Female</label> &emsp;
+					<input type="radio" id="unknown" name="gender" required="required">
+					<label for="unknown">Do not want to provide</label> &emsp;
+				</p>
+				<p>
+    			<label for="name">Full name</label><br>
+    			<input type="text" id="name" name="n" required="required" placeholder="First & Last name">
+				</p>
+				<p>
+    			<label for="street">Street</label>  &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+					<label for="housenumber">House number</label><br>
+    			<input type="text" id="street" name="s" placeholder="Street"> &emsp;
+    			<input type="number" id="housenumber" name="hn" required="required" placeholder="House number">
+				</p>
+				<p>
+					<label for="postalcode">Postal code</label>&emsp; &emsp;&emsp;&emsp;&ensp;
+					<label for="city">City</label><br>
+					<input type="number" id="postalcode" name="pc" required="required" placeholder="Postal code"> &emsp;
+    			<input type="text" id="city" name="c" required="required" placeholder="City">
+				</p>
+				<p>
+					<label for="email">E-mail</label><br>
+    			<input type="text" id="email" name="em" required="required" placeholder="E-mail">
+				</p>
+
+				<p>
+	    		<label for="payment">Payment</label><br>
+	    		<select id="paymnet" name="pm">
+	        	<option>VISA</option>
+	        	<option>MasterCard</option>
+	        	<option>PayPal</option>
+	        	<option>Cash</option>
+	    		</select>
+				</p>
+			</form>
+
+			<button type="submit"><img class="button" src="img/lieferung.png"> Order now</button>
+
+			</section>
+
+			<br><br><br><br>
+			<footer>&copy; Spaghetti Burgers | Interfaceprogramming with a User Perspective | Julia von Abel</footer>
+    </body>
 </html>
